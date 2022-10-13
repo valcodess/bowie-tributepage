@@ -7,27 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Bowie</title>
 </head>
-
 <body>
-    <div class="navi">
-        <ul>
-            <li><a href="#">THE STARMAN</a></li>
-            <li><a href="#">CHINA GIRL</a></li>
-            <li><a href="#">FAME</a></li>
-            <li><a href="#">LET'S DANCE</a></li>
-        </ul>
-        <div class="bowie">
-        <img src="/bowie/png0.png" alt="">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <ul id="links">
+                <li><a href="#" id="starman">THE STARMAN</a></li>
+                <li><a href="#" id="chinagirl">CHINA GIRL</a></li>
+                <li><a href="#" id="fame">FAME</a></li>
+                <li><a href="#" id="dance">LET'S DANCE</a></li>
+                <li><a href="#" id="upressure">UNDER PRESSURE</a></li>
+            </ul>
+            <img alt="bowieHover" onmouseout="this.src='/bowie/png0.png';" onmouseover="this.src='/bowie/png1.png';"
+                src="/bowie/png0.png" />
+        </div>
     </div>
 
-    <div class="bowieHover">
-        <img src="/bowie/png1.png" alt="">
-    </div>
-    
-</div>
-
+    <span id="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="bi bi-list"></i></span>
     <div id="video">
         <video src="/bowie/chinagirl.mp4" controls audio></video>
     </div>
@@ -48,8 +47,20 @@
             They're quite aware of what they're going through.</div>
         </p>
         <div class="img3"></div>
+        <div class="text2">
+            <p>It's a crystal. Nothing more. <br>
+                But if you turn it this way and look into it, <br>
+                it will show you your dreams. </p>
+        </div>
+
+        <div class="section" id="starman">
+            <p>little china girl</p>
+        </div>
+
+
 </body>
 
 <script src="script.js"></script>
+
 
 </html>
